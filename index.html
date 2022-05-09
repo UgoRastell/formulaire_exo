@@ -9,8 +9,11 @@
     <title>Formulaire</title>
 </head>
 <body>
+    <video loop id="video" class="videoPetit">
+        <source src="./media/video.mp4" type="video/mp4">
+    </video>
     <div class="container">
-        <form action="action_page.php">
+        <form action="">
       
           <label for="prenom">Prénom</label>
           <input type="text" id="prenom" name="prenom" placeholder="Ton prénom..">
@@ -21,18 +24,20 @@
           <label for="objet">Objet</label>
           <select id="objet" name="objet">
             <option value="0">Choississez une option dans la liste...</option>
-            <option value="1">Prise de contact</option>
-            <option value="2">Reclamation client</option>
+            <option value="Prise de contact">Prise de contact</option>
+            <option value="Reclamation client">Reclamation client</option>
           </select>
       
           <label for="commentaire">Commentaire</label>
           <textarea id="commentaire" name="commentaire" placeholder="Ecrivez ici.." rows="10"></textarea>
-          <input type="checkbox" id="vehicle1" name="rgpd" required="required">
+          <input type="checkbox" id="rgpd" name="rgpd" required="required" oninvalid="setCustomValidity(' ')">
           <label for="rgpd">J'accepte les conditions d'utilisations</label><br>
           
-          <button>Valider</button>
+          <button id="submit">Valider</button>
+          <span id="message"></span>
       
         </form>
       </div>
+      <script src="./js/form.js"></script>
 </body>
 </html>
