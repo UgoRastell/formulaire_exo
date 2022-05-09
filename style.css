@@ -21,8 +21,10 @@ input[type=text], select, textarea {
   }
   
   /* When moving the mouse over the submit button, add a darker green color */
-  button{
-    background-color: #45a049;
+  button:hover{
+    background-color: white;
+    color:#45a049;
+    border-color: black;
   }
   
   /* Add a background color and some padding around the form */
