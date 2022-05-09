@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <form action="action_page.php">
+      
+          <label for="prenom">Prénom</label>
+          <input type="text" id="fname" name="firstname" placeholder="Ton prénom..">
+      
+          <label for="nom">Nom</label>
+          <input type="text" id="lname" name="lastname" placeholder="Ton nom..">
+      
+          <label for="objet">Objet</label>
+          <select id="objet" name="objet">
+            <option value="0">Choississez une option dans la liste...</option>
+            <option value="1">Prise de contact</option>
+            <option value="2">Reclamation client</option>
+          </select>
+      
+          <label for="commentaire">Commentaire</label>
+          <textarea id="commentaire" name="commentaire" placeholder="Ecrivez ici.."></textarea>
+      
+          <button type="valide" value="valider">Valider</button>
+      
+        </form>
+      </div>
+</body>
+</html>
